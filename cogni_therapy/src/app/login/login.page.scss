@@ -1,0 +1,14 @@
+ion-content {
+    --background: url('../../assets/img/login.jpg') no-repeat center center / cover;
+}
+
+.login-back {
+    //--background: #22242B;
+    background-color: #22242B;
+    width: 100%;
+}
+
+.login-icon {
+    --background: url('../../assets/img/login-icon.png') no-repeat center center / cover;
+    // background-image: url('../../assets/img/login-icon.png');
+}
