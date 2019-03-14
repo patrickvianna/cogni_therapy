@@ -1,14 +1,35 @@
 ion-content {
-    --background: url('../../assets/img/login.jpg') no-repeat center center / cover;
+    // --background: url('../../assets/img/login.jpg') no-repeat center center / cover;
+    --background: url('../../assets/img/background.jpg') no-repeat center center / cover;
 }
 
+// .box-login{
+//     // margin-top: 50%;
+// }
+
 .login-back {
-    //--background: #22242B;
-    background-color: #22242B;
-    width: 100%;
+    background-color: #fcf9f9; // #22242B;
+    width: 70%;
+    
+    // height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    padding-top: 45px;
+    border-radius: 10px;
 }
 
 .login-icon {
-    --background: url('../../assets/img/login-icon.png') no-repeat center center / cover;
+    position: relative;
+    top: 30px;
+    // --background: url('../../assets/img/login-icon.png') no-repeat center center / cover;
     // background-image: url('../../assets/img/login-icon.png');
+}
+
+span.senha{
+    color: blue;
+}
+
+.box-senha {
+    margin: 15px;
 }
