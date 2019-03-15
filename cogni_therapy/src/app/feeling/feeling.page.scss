@@ -1,0 +1,46 @@
+.background{
+    // background-color:	#DA9284;
+    // --background: #DA9284 no-repeat center center / cover;
+    // --background: linear-gradient( to bottom, #DA9284 20%, white , white 10%) no-repeat center center / cover;
+    --background: linear-gradient( to bottom, #EF9C8B 20%, white , white 10%) no-repeat center center / cover;
+}
+
+.what-feeling{
+    margin-bottom: 13%;
+    text-align: center;
+}
+
+.btn-border-radius{
+    --border-radius: 15px;
+    text-align: center;
+}
+
+.btn-width {
+    width: 150px;
+    // --border-width: 20%
+}
+
+.mood-history{
+    bottom: 0;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+}
+
+ion-button.btn-mood-history{
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 ;
+}
+
+ion-col {
+    padding: 0 ;
+}
+
+// // MEDIA QUERY
+
+// @media screen and (min-width : 350) and (min-height : 730px) {
+//     .Landing-formContainer{
+//         padding-top: 35px;
+//     }
+// }
