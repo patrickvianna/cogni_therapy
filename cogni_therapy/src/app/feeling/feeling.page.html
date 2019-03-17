@@ -6,24 +6,31 @@
 
 <ion-content class="background" padding>
   <div class="what-feeling">
-    <h3><b>Quais são seus sentimentos?</b></h3> 
+    <h3><b>Quais são seus sentimentos?</b></h3>
   </div>
 
   <div text-center>
     <ion-button color="tertiary" class="btn-border-radius">Selecione mais de um</ion-button>
   </div>
-  
+
   <div class="mood-history">
 
-    <div text-center>
-      <ion-button color="tertiary" class="btn-border-radius btn-width">Next</ion-button>
-    </div>
-    <ion-grid class="">
+    <!-- <div text-center>
+    </div> -->
+    <ion-grid>
       <ion-row>
-        <ion-col col-6>
+        <ion-col>
+          <ion-button color="tertiary" class="btn-border-radius btn-width">Outros</ion-button>
+        </ion-col>
+        <ion-col class="padding-zero">
+          <ion-button color="tertiary" class="btn-border-radius btn-width">Próximo</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="padding-zero">
           <ion-button expand="full" color="tertiary" class="btn-mood-history">Mood</ion-button>
         </ion-col>
-        <ion-col col-6>
+        <ion-col class="padding-zero">
           <ion-button expand="full" color="light" class="btn-mood-history">History</ion-button>
         </ion-col>
       </ion-row>

@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>feeling-detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-tabs>
+    <!-- Tab bar -->
+    <ion-tab-bar slot="top" color="primary">
+      <ion-tab-button tab="account">
+        <!-- <ion-icon name="person"></ion-icon> -->
+        <ion-label name="criar">Criar</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="contact">
+        <ion-label name="editar">Editar</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="settings">
+        <ion-label name="deletar">Deletar</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  <div class="box-text-area">
+    <h5>Happy</h5>
+  </div>
+  <div>
+    <h5>Feelling</h5>
+  </div>
+
+  <div>
+    <ion-grid class="">
+      <ion-row>
+        <ion-col size="10">
+          <ion-item>
+            <ion-label position="stacked">Situação</ion-label>
+            <ion-textarea (ionBlur)="situacaoBlur()" [(ngModel)]="situacao"></ion-textarea>
+          </ion-item>
+        </ion-col>
+        <ion-col class="checked-text">
+          <div>
+            <img src="../../assets/img/radio-false.png" [hidden]="situacaoChecked" />
+            <img src="../../assets/img/radio-true.png" [hidden]="!situacaoChecked" />
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="10">
+          <ion-item>
+            <ion-label position="stacked">Problemas</ion-label>
+            <ion-textarea (ionBlur)="problemasBlur()" [(ngModel)]="problemas"></ion-textarea>
+          </ion-item>
+        </ion-col>
+        <ion-col class="checked-text">
+          <span>
+            <img src="../../assets/img/radio-false.png" [hidden]="problemasChecked" />
+            <img src="../../assets/img/radio-true.png" [hidden]="!problemasChecked" />
+          </span>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="10">
+          <ion-item>
+            <ion-label position="stacked">Ação</ion-label>
+            <ion-textarea (ionBlur)="acaoBlur()" [(ngModel)]="acao"></ion-textarea>
+          </ion-item>
+        </ion-col>
+        <ion-col class="checked-text">
+          <span>
+            <img src="../../assets/img/radio-false.png" [hidden]="acaoChecked" />
+            <img src="../../assets/img/radio-true.png" [hidden]="!acaoChecked" />
+          </span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <ion-grid>
+      <ion-row>
+        <ion-col class="padding-zero">
+          <ion-button expand="full" color="tertiary" class="btn-mood-history">Mood</ion-button>
+        </ion-col>
+        <ion-col class="padding-zero">
+          <ion-button expand="full" color="light" class="btn-mood-history">History</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+</ion-content>
