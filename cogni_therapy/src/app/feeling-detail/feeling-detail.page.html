@@ -22,6 +22,10 @@
   </ion-tabs>
   <div class="box-text-area">
     <h5>Happy</h5>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime display-format="DD/MM/YYYY HH:mm"></ion-datetime>
+    </ion-item>
   </div>
   <div>
     <h5>Feelling</h5>
@@ -73,8 +77,11 @@
       </ion-row>
     </ion-grid>
 
-
-    <ion-grid>
+    <div text-center>
+      <ion-button color="primary" class="btn-border-radius btn-width">Salvar</ion-button>
+    </div>
+    
+    <ion-grid class="tab-fixed">
       <ion-row>
         <ion-col class="padding-zero">
           <ion-button expand="full" color="tertiary" class="btn-mood-history">Mood</ion-button>

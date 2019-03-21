@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class FeelingDetailPage implements OnInit {
 
   public situacaoChecked = false;
-  public situacao = "";
+  public situacao : String;
   public problemasChecked = false;
-  public problemas = "";
+  public problemas : String;
   public acaoChecked = false;
-  public acao = "";
+  public acao : String;
 
   constructor() { }
 
@@ -21,21 +21,21 @@ export class FeelingDetailPage implements OnInit {
 
   situacaoBlur() {
     console.log(this.situacao);
-    if (this.situacao.trim() != "" && this.situacao != undefined)
+    if (this.situacao != undefined && this.situacao.trim() != "")
       this.situacaoChecked = true;
     else
       this.situacaoChecked = false;
   }
 
   problemasBlur() {
-    if (this.problemas.trim() != "" && this.problemas != undefined)
+    if (this.problemas != undefined && this.problemas.trim() != "")
       this.problemasChecked = true;
     else
       this.problemasChecked = false;
   }
 
   acaoBlur() {
-    if (this.acao.trim() != "" && this.acao != undefined)
+    if (this.acao != undefined && this.acao.trim() != "")
       this.acaoChecked = true;
     else
       this.acaoChecked = false;

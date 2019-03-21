@@ -1,0 +1,44 @@
+ion-toolbar {
+    --background: #438DD6;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.light{
+    --background: #f4f5f8;
+}
+
+.tertiary{
+    --background: #7044ff;
+}
+
+.text-light{
+    color: #f4f5f8;
+}
+
+.faces-grid{
+    margin-top: 80%;
+}
+
+ion-col{
+    padding: 0;
+}
+
+.rol-2{
+    margin-top: 10%
+}
+
+.face4{
+    margin-left: 20%;
+}
+
+.face5{
+    margin-right: 20%;
+}

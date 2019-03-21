@@ -1,3 +1,7 @@
+ion-toolbar {
+    --background: #438DD6;
+}
+
 ion-textarea{
     width: 100%;
     height: 70px;
@@ -12,10 +16,6 @@ ion-textarea{
     margin-top: 20%;
 }
 
-ion-toolbar {
-    --background: #438DD6;
-}
-
 .checked-text{
     margin-top: 12%;
 }
@@ -28,4 +28,13 @@ ion-button.btn-mood-history{
 
 .padding-zero {
     padding: 0 ;
+}
+
+.btn-width {
+    width: 130px;
+    // --border-width: 20%
+}
+
+.tab-fixed{
+    position: fixed;
 }

@@ -16,7 +16,9 @@ const routes: Routes = [
     loadChildren: './list/list.module#ListPageModule'
   },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },  { path: 'feeling', loadChildren: './feeling/feeling.module#FeelingPageModule' },
-  { path: 'feeling-detail', loadChildren: './feeling-detail/feeling-detail.module#FeelingDetailPageModule' }
+  { path: 'feeling-detail', loadChildren: './feeling-detail/feeling-detail.module#FeelingDetailPageModule' },
+  { path: 'history', loadChildren: './history/history.module#HistoryPageModule' },
+  { path: 'feel', loadChildren: './feel/feel.module#FeelPageModule' }
 
 ];
 

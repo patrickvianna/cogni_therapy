@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>history</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="padding-zero">
+        <div text-center>
+          <ion-button color="tertiary" size="small" class="btn-border-radius">Últimos 7 dias</ion-button>
+        </div>
+      </ion-col>
+      <ion-col class="padding-zero">
+        <div text-center>
+          <ion-button color="tertiary" size="small" class="btn-border-radius">Esse mês</ion-button>
+        </div>
+      </ion-col>
+      <ion-col class="padding-zero">
+        <div text-center>
+          <ion-button color="tertiary" size="small" class="btn-border-radius">Últimos mês</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="chart">
+    CHART
+  </div>
+
+  <!-- <ion-list>
+    <button (click)="expandItem(item)" ion-item *ngFor="let item of history.feelings" class="history-list">
+        <h4><b> {{ item.date | date:'short' }} </b></h4>
+      <app-accordion [expandHeight]="itemExpandHeight" [expanded]="item.expanded">
+        <h5> {{ item.action }} </h5>
+        <h5> situation: {{ item.situation }} </h5>
+        <h5> thought: {{ item.thought }} </h5>
+      </app-accordion>
+    </button>
+  </ion-list> -->
+  <!-- <ion-list> -->
+    <!-- <ion-card>
+        <ion-card-header>
+
+        </ion-card-header>
+        <ion-card-content *ngFor="let item of history.feelings">
+          <accordion [title]="item.date | date:'dd/MM/yyyy HH:mm'" >
+            <h5> {{ item.action }} </h5>
+            <h5> situation: {{ item.situation }} </h5>
+            <h5> thought: {{ item.thought }} </h5>
+          </accordion>
+        </ion-card-content>
+    </ion-card> -->
+  <!-- </ion-list> -->
+  <accordion title="teste" >
+    ALO ALO
+  </accordion>
+  <div class="mood-history">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="padding-zero">
+          <ion-button expand="full" color="tertiary" class="btn-mood-history">Mood</ion-button>
+        </ion-col>
+        <ion-col class="padding-zero">
+          <ion-button expand="full" color="light" class="btn-mood-history">History</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

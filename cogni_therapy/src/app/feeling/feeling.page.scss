@@ -10,11 +10,6 @@
     text-align: center;
 }
 
-.btn-border-radius{
-    --border-radius: 15px;
-    text-align: center;
-}
-
 .btn-width {
     width: 130px;
     // --border-width: 20%
@@ -22,7 +17,7 @@
 
 .mood-history{
     bottom: 0;
-    position: absolute;
+    position: fixed;
     left: 10%;
     right: 10%;
 }
