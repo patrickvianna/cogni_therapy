@@ -1,7 +1,7 @@
 .background{
     // background-color:	#DA9284;
     // --background: #DA9284 no-repeat center center / cover;
-    --background: linear-gradient( to bottom, #DA9284 20%, white 80%) no-repeat center center / cover;
+    // --background: linear-gradient( to bottom, #DA9284 20%, white 80%) no-repeat center center / cover;
     // --background: linear-gradient( to bottom, #EF9C8B 20%, white , white 10%) no-repeat center center / cover;
 }
 
@@ -37,3 +37,46 @@ ion-button.btn-mood-history{
 button {
     padding: 0;
 }
+
+
+// //ACCORDION
+.accordion-list {
+    margin-bottom: 4px;
+    --ion-item-background: #fff;
+
+    .section, .section-active{
+        --min-height: 58px;
+    }
+}
+
+.section {
+    --ion-item-background: #fff;
+    --ion-item-color: #000;
+}
+
+.section-active {
+    --ion-item-background: #ffc400;
+    --ion-item-color: #fff;
+    font-weight: 600;
+
+    .ion-icon {
+        color: #fff;
+    }
+}
+
+h3 {
+    color: var(--ion-color-step-400,#999);
+}
+// .child {
+//     background-color: #e8e7e6;
+//     color: #000;
+//     margin-bottom: 4px;
+// }
+
+// .label {
+//     margin: 0px;
+// }
+
+// .list{
+//     margin-bottom: 4px;
+// }

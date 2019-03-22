@@ -12,4 +12,9 @@ export class FeelPage implements OnInit {
   ngOnInit() {
   }
 
+  selected(container: any){
+    // console.log('container')
+    console.log(container)
+  }
+
 }
