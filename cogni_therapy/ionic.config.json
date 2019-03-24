@@ -1,5 +1,7 @@
 {
   "name": "cogni_therapy",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

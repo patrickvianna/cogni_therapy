@@ -5,12 +5,25 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FeelingDetailPage } from './feeling-detail.page';
+import { FeelingDetailCriarPage } from './feeling-detail-criar.page';
+import { FeelingDetailEditarPage } from './feeling-detail-editar.page.';
 
 const routes: Routes = [
   {
     path: '',
-    component: FeelingDetailPage
+    children: [
+      {
+        path: '',
+        outlet: '',
+        component: FeelingDetailCriarPage
+      },
+      {
+        path: 'editar/:id',
+        outlet: 'editar/:id',
+        component: FeelingDetailEditarPage
+      }
+    ]
+
   }
 ];
 
@@ -21,6 +34,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [FeelingDetailPage]
+  declarations: [FeelingDetailCriarPage, FeelingDetailEditarPage]
 })
-export class FeelingDetailPageModule {}
+export class FeelingDetailPageModule { }

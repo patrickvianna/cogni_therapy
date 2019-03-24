@@ -5,17 +5,17 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-tabs>
+  <ion-tabs  tab="settings">
     <!-- Tab bar -->
     <ion-tab-bar slot="top" color="primary">
-      <ion-tab-button tab="account">
+      <ion-tab-button tab="">
         <!-- <ion-icon name="person"></ion-icon> -->
         <ion-label name="criar">Criar</ion-label>
       </ion-tab-button>
-      <ion-tab-button tab="contact">
+      <ion-tab-button tab="editar/1">
         <ion-label name="editar">Editar</ion-label>
       </ion-tab-button>
-      <ion-tab-button tab="settings">
+      <ion-tab-button tab="excluir">
         <ion-label name="deletar">Deletar</ion-label>
       </ion-tab-button>
     </ion-tab-bar>
@@ -42,8 +42,8 @@
         </ion-col>
         <ion-col class="checked-text">
           <div>
-            <img src="../../assets/img/radio-false.png" [hidden]="situacaoChecked" />
-            <img src="../../assets/img/radio-true.png" [hidden]="!situacaoChecked" />
+            <img src="../../assets/icon/radio-false.png" [hidden]="situacaoChecked" />
+            <img src="../../assets/icon/radio-true.png" [hidden]="!situacaoChecked" />
           </div>
         </ion-col>
       </ion-row>
@@ -56,8 +56,8 @@
         </ion-col>
         <ion-col class="checked-text">
           <span>
-            <img src="../../assets/img/radio-false.png" [hidden]="problemasChecked" />
-            <img src="../../assets/img/radio-true.png" [hidden]="!problemasChecked" />
+            <img src="../../assets/icon/radio-false.png" [hidden]="problemasChecked" />
+            <img src="../../assets/icon/radio-true.png" [hidden]="!problemasChecked" />
           </span>
         </ion-col>
       </ion-row>
@@ -70,8 +70,8 @@
         </ion-col>
         <ion-col class="checked-text">
           <span>
-            <img src="../../assets/img/radio-false.png" [hidden]="acaoChecked" />
-            <img src="../../assets/img/radio-true.png" [hidden]="!acaoChecked" />
+            <img src="../../assets/icon/radio-false.png" [hidden]="acaoChecked" />
+            <img src="../../assets/icon/radio-true.png" [hidden]="!acaoChecked" />
           </span>
         </ion-col>
       </ion-row>
