@@ -1,3 +1,4 @@
+import { NavController } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -14,7 +15,7 @@ export class FeelingDetailCriarPage implements OnInit {
   public acaoChecked = false;
   public acao : String;
 
-  constructor() { }
+  constructor(private nav: NavController) { }
 
   ngOnInit() {
   }
@@ -41,4 +42,7 @@ export class FeelingDetailCriarPage implements OnInit {
       this.acaoChecked = false;
   }
 
+  salvar() {
+    this.nav.navigateRoot("history");
+  }
 }

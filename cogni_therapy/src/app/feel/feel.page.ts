@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-feel',
@@ -7,13 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeelPage implements OnInit {
 
-  constructor() { }
+  constructor(private nav: NavController) { }
 
   ngOnInit() {
   }
 
-  selected(container: any){
-    // console.log('container')
+  selected(container: any) {
+    this.nav.navigateRoot("feeling");
     console.log(container)
   }
 

@@ -1,4 +1,7 @@
+import { FeelPage } from './../feel/feel.page';
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,13 +13,14 @@ export class LoginPage implements OnInit {
   public login : String;
   public senha : String;
 
-  constructor() { }
+  constructor(private nav: NavController, private rot: Router) { }
 
   ngOnInit() {
   }
 
   logar() {
-    console.log('login')
+    this.nav.navigateRoot("feel");
+    // this.rot.navigate();
   }
   
   registrar(){
