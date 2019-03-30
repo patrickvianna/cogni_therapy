@@ -41,13 +41,11 @@
     </ion-row>
   </ion-grid>
 
-  <div text-center>
-    <ion-item (click)="selected($event)">
-      <ion-button type="submit" class="btn-border-radius btn-width">Salvar</ion-button>
-    </ion-item>
-  </div>
-
+  
   <ion-tabs>
+    <div text-center>
+      <ion-button color="tertiary" class="btn-border-radius btn-width" (click)="selected($event)">Próximo</ion-button>
+    </div>
     <!-- Tab bar -->
     <ion-tab-bar slot="bottom">
       <ion-tab-button tab="account" class="tertiary">
