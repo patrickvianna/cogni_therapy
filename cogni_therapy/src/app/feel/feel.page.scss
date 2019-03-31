@@ -26,7 +26,10 @@ ion-toolbar {
 .faces-grid{
     margin-top: 60%;
 }
-
+ion-grid{
+    padding: 0px;
+    margin: 0px;
+}
 ion-col{
     padding: 0;
 }
